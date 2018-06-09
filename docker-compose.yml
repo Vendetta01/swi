@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  swi:
+    image: swi:0.2
+    ports:
+      - "8070:8070"
+    volumes:
+      - /var/run:/var/run
+      - /run/systemd:/run/systemd
+        #- /bin:/usr/local/bin
+

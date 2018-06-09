@@ -20,7 +20,7 @@ class myHandler(BaseHTTPRequestHandler):
 try:
     #Create a web server and define the handler to manage the
     #incoming request
-    server_address = ('127.0.0.1', PORT_NUMBER)
+    server_address = ('0.0.0.0', PORT_NUMBER)
 
     httpd = HTTPServer(server_address, myHandler)
     print('Started httpserver on port ' , PORT_NUMBER)
